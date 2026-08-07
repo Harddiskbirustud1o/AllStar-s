@@ -1,0 +1,36 @@
+/* ===========================================================
+   AllStar's Guitar Collection — PRODUCT DATA
+   -----------------------------------------------------------
+   This is the ONLY file you need to touch to add, remove, or
+   edit guitars. Everything else (script.js) just reads from
+   this list.
+
+   Fields:
+   - name    : shown on the card / showcase
+   - brand   : used for the big faded watermark text behind
+               the showcase image (keep it short, ALL CAPS look
+               is applied automatically via CSS)
+   - price   : number, in Rupiah (formatted automatically)
+   - image   : path to a transparent PNG product photo. If the
+               file is missing/404s, the UI automatically falls
+               back to images/guitar-icon.svg tinted gold, so
+               it's safe to add guitars before you have a photo.
+   =========================================================== */
+
+const guitars = [
+  { name: "Maton SRS60C",                          brand: "Maton",   price: 25790000, image: "images/maton-srs60c.png" },
+  { name: "Yamaha Grand Concert Classical Guitar",  brand: "Yamaha",  price: 10400000, image: "images/yamaha-grand-concert.png" },
+  { name: "Gibson SG Supreme",                      brand: "Gibson",  price: 51750000, image: "images/gibson-sg-supreme.png" },
+  { name: "Gibson Thunderbird",                     brand: "Gibson",  price: 23900000, image: "images/gibson-thunderbird.png" },
+  { name: "Gibson Les Paul Special Semi Hollow",    brand: "Gibson",  price: 14550000, image: "images/gibson-les-paul-special-semi-hollow.png" },
+  { name: "Fender Jazzmaster",                      brand: "Fender",  price: 14000000, image: "images/fender-jazzmaster.png" },
+  { name: "Fender Swinger Musicander",              brand: "Fender",  price: 25000000, image: "images/fender-musiclander.png" },
+  { name: "SX Thinline Double Cutaway 6501",        brand: "SX",      price: 4200000,  image: "images/sx-thinline.png" },
+  { name: "Gibson Les Paul Custom Black Beauty",    brand: "Gibson",  price: 62000000, image: "images/gibson-les-paul-custom-black-beauty.png" },
+  { name: "Gibson Les Paul Standard (Wine Red)",    brand: "Gibson",  price: 35000000, image: "images/gibson-les-paul-red.png" },
+  { name: "Gibson Les Paul Standard (Trans Blue)",  brand: "Gibson",  price: 36500000, image: "images/gibson-les-paul-blue.png" },
+  { name: "B.C. Rich Masterpiece Mockingbird",      brand: "B.C. Rich", price: 3500000, image: "images/bc-rich-mockingbird.png" },
+  { name: "Cort Soloist FR",                        brand: "Cort",    price: 4390000,  image: "images/cort-soloist-fr.png" },
+  { name: "Jackson JS Series King V JS32",          brand: "Jackson", price: 7660000,  image: "images/jackson-king-v.png" },
+  { name: "Ibanez AEG 12-String Acoustic-Electric", brand: "Ibanez",  price: 18500000, image: "images/ibanez-aeg-12-string.png" },
+];

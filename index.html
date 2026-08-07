@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AllStar's Guitar Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="AllStar's logo">
+      <span>AllStar's</span>
+    </a>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#guitars">Guitars</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Sejak dari 2030</p>
+      <h1>AllStar's Guitar<br>Collection</h1>
+    </div>
+    <div class="hero-media">
+      <!-- NOTE: no real "Black Beauty" photo was supplied yet, so this
+           points at images/hero-guitar.png. Drop a real photo there with
+           that exact filename and it will appear automatically; until
+           then it gracefully falls back to the gold guitar icon. -->
+      <img src="images/gibson-les-paul-custom.png" alt="Gibson Les Paul Custom - Black Beauty" id="heroImg"
+           onerror="this.onerror=null;this.src='images/guitar-icon.svg';this.classList.add('is-fallback');">
+      <span class="hero-tag"><i></i>Black Beauty</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <h2>Tentang Kami</h2>
+      <p>AllStar's Guitar Collection merupakan toko gitar yang mempunyai banyak koleksi gitar langka dari luar negeri, bertujuan untuk mempermudah para kolektor gitar atau khusus yang berminat mencari gitar impian yang sekarang sudah terjangkau di indonesia.</p>
+    </div>
+    <div class="about-media">
+      <img src="images/jackson-king-v.png" alt="Jackson V-shaped guitar" id="aboutImg"
+           onerror="this.onerror=null;this.src='images/guitar-icon.svg';this.classList.add('is-fallback');">
+    </div>
+  </div>
+</section>
+
+<!-- ===== PICK YOUR CHAR ===== -->
+<section class="picker" id="guitars">
+  <div class="container picker-inner">
+
+    <div class="picker-grid">
+      <div class="picker-heading">
+        <h2>Pick<br>Your<br>Char</h2>
+        <p>Semua Gitar impian ada disini</p>
+      </div>
+
+      <div class="picker-showcase">
+        <span class="picker-watermark" id="showcaseWatermark"></span>
+        <img id="showcaseImg" src="" alt="">
+      </div>
+
+      <div class="picker-details">
+        <p class="picker-label">Produk Populer</p>
+        <h3 id="showcaseName"></h3>
+        <p class="picker-price" id="showcasePrice"></p>
+        <button class="btn-primary" id="ctaBtn">Get 1 For you</button>
+      </div>
+    </div>
+
+    <div class="carousel">
+      <button class="car-arrow car-prev" aria-label="Previous">&#8249;</button>
+      <span class="car-endpoint car-start">To The Start</span>
+
+      <div class="car-track" id="carTrack"></div>
+
+      <span class="car-endpoint car-end">To The End</span>
+      <button class="car-arrow car-next" aria-label="Next">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="reviews">
+  <div class="container">
+    <h2>Review Dari Pelanggan Kami</h2>
+    <div class="review-grid" id="reviewGrid"></div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo logo-light">
+        <img src="images/logo.png" alt="AllStar's logo">
+        <span>AllStar's</span>
+      </a>
+      <p>Crafting the future of sound since 2030. Every instrument tells a story of wood, wire, and soul.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:AkmilBae@gmail.com">AkmilBae@gmail.com</a></li>
+        <li><a href="#">AllMill</a></li>
+        <li><a href="#">MillStar's</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Dealer Portal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span>&copy; 2026 AllStar's Archive</span>
+    <span>Designed for a presentation</span>
+  </div>
+</footer>
+
+<!-- Data first, then the interaction logic that reads it -->
+<script src="js/guitars-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
