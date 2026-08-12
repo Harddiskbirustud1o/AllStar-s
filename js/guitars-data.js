@@ -1,22 +1,3 @@
-/* ===========================================================
-   AllStar's Guitar Collection — PRODUCT DATA
-   -----------------------------------------------------------
-   This is the ONLY file you need to touch to add, remove, or
-   edit guitars. Everything else (script.js) just reads from
-   this list.
-
-   Fields:
-   - name    : shown on the card / showcase
-   - brand   : used for the big faded watermark text behind
-               the showcase image (keep it short, ALL CAPS look
-               is applied automatically via CSS)
-   - price   : number, in Rupiah (formatted automatically)
-   - image   : path to a transparent PNG product photo. If the
-               file is missing/404s, the UI automatically falls
-               back to images/guitar-icon.svg tinted gold, so
-               it's safe to add guitars before you have a photo.
-   =========================================================== */
-
 const guitars = [
   { name: "Maton SRS60C",                          brand: "Maton",   price: 25790000, image: "images/maton-srs60c.png" },
   { name: "Yamaha Grand Concert Classical Guitar",  brand: "Yamaha",  price: 10400000, image: "images/yamaha-grand-concert.png" },

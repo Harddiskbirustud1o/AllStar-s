@@ -1,7 +1,3 @@
-/* ===========================================================
-   AllStar's Guitar Collection — stylesheet
-   =========================================================== */
-
 :root{
   --gold: #d4a72c;
   --gold-dark: #b8901f;
@@ -45,16 +41,12 @@ button{ font-family: inherit; cursor: pointer; }
   padding: 0 32px;
 }
 
-/* fallback icon styling: whenever a real photo is missing,
-   images/guitar-icon.svg is shown tinted to the card colour */
 img.is-fallback{
   color: var(--gold);
   padding: 12%;
   object-fit: contain !important;
 }
-/* on dark backgrounds (hero) the fallback icon should read gold too,
-   img currentColor doesn't apply to raster SVG-as-image, so we use
-   a filter as a stand in tint */
+
 .hero-media img.is-fallback,
 .about-media img.is-fallback{
   padding: 18%;
@@ -220,7 +212,6 @@ img.is-fallback{
   font-size: .95rem;
 }
 
-/* showcase + giant faded brand watermark behind it, matching the prototype */
 .picker-showcase{
   position: relative;
   background: linear-gradient(160deg, #f4efe4, #e7ddc8);

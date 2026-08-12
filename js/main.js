@@ -1,8 +1,3 @@
-/* ===========================================================
-   AllStar's Guitar Collection — interactions
-   Reads product data from js/guitars-data.js (loaded first).
-   =========================================================== */
-
 const formatIDR = (n) => "Rp" + n.toLocaleString("id-ID");
 
 const showcaseImg       = document.getElementById("showcaseImg");
@@ -75,9 +70,6 @@ document.getElementById("ctaBtn").addEventListener("click", () => {
   alert(`Terima kasih! Kami akan menghubungi kamu soal "${g.name}" (${formatIDR(g.price)}).`);
 });
 
-// prev/next now move the *selection*, not just the scroll position,
-// so the showcase + watermark update to match, then bring the picked
-// card into view.
 document.querySelector(".car-prev").addEventListener("click", () => {
   renderShowcase(activeIndex - 1);
   carTrack.children[activeIndex].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
@@ -87,7 +79,6 @@ document.querySelector(".car-next").addEventListener("click", () => {
   carTrack.children[activeIndex].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
 });
 
-/* ---- Reviews: placeholder cards (swap copy with real reviews) ---- */
 const reviews = [
   { name: "Andra P.", role: "Kolektor Gitar", text: "Prosesnya cepat dan gitarnya sesuai deskripsi. Sangat puas!", photo: "images/reviews/andra.jpg" },
   { name: "Nadia R.", role: "Musisi Studio", text: "Koleksinya lengkap, jarang ada toko yang punya model selangka ini.", photo: "images/reviews/nadia.jpg" },
